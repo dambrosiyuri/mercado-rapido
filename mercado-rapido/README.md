@@ -1,41 +1,49 @@
-# 🛒 Mercado Rápido – Smart Shopping List
+# 🛒 Mercado Rápido – Lista Inteligente de Compras
 
-## 📌 Overview
-Mercado Rápido is a mobile app + backend designed to simplify grocery shopping.
-- Create and share shopping lists
-- Get automatic suggestions based on previous purchases
-- Mark items as completed during shopping
+## 📌 Visão Geral
+**Mercado Rápido** é um sistema (web + backend) projetado para **simplificar e otimizar a experiência de compras no mercado**.  
+Com ele é possível criar listas inteligentes, compartilhar com familiares e receber sugestões automáticas com base em compras anteriores.
 
-## 🚀 Tech Stack
-- **Frontend (Mobile):** React Native (Expo)
+### Principais recursos:
+- Criar e compartilhar listas de compras;
+- Receber sugestões automáticas com base no histórico de compras;
+- Marcar itens como concluídos durante a compra;
+- Organizar produtos por categorias.
+
+---
+
+## 🚀 Tecnologias Utilizadas
+- **Frontend (Web):** Next.js (React)
 - **Backend:** Node.js + Express
-- **Database:** MongoDB Atlas
+- **Banco de Dados:** MongoDB Atlas
 - **CI/CD:** GitHub Actions
 
-## ⚙️ Setup Instructions
+---
 
-### 1. Clone repository
+## ⚙️ Instruções de Configuração
+
+### 1. Clonar o repositório
 ```bash
-git clone https://github.com/<your-username>/mercado-rapido.git
+git clone https://github.com/<seu-usuario>/mercado-rapido.git
 cd mercado-rapido
 ```
 
-### 2. Backend Setup
+### 2. Configuração do Backend
 ```bash
 cd backend
 cp .env.example .env
-# edit your .env with real MongoDB credentials
+# edite o arquivo .env com suas credenciais reais do MongoDB
 npm install
 npm run dev
 ```
 
-### 3. Frontend Setup
+### 3. Configuração do Frontend
 ```bash
-cd mobile
+cd frontend
 npm install
-npm start
+npm run dev
 ```
 
-### 4. Access
+### 4. Acesso
 - Backend: http://localhost:5000
 - Mobile: Scan QR with Expo Go app
